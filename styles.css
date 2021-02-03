@@ -1,0 +1,42 @@
+.section1 {
+    height: 100vh;
+    padding: 54px 0;
+    ;
+}
+
+.collapsible-container {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.accordion-button-changed {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-button-changed:not(.collapsed) {
+    color: #000;
+    background-color: transparent;
+}
+
+.accordion-button-changed:focus {
+    background: transparent;
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+.accordion-button-changed::after {
+    content: "";
+    background-image: none;
+    position: absolute;
+    right: 1.25rem;
+    border-left: 4px solid#26a69a;
+    border-bottom: 4px solid#26a69a;
+    transform: rotate( -45deg);
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.accordion-button-changed:not(.collapsed)::after {
+    background-image: none;
+    transform: rotate(135deg);
+}
